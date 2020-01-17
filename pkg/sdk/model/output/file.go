@@ -37,7 +37,7 @@ type FileOutputConfig struct {
 	Path string `json:"path"`
 	// The flushed chunk is appended to existence file or not. The default is not appended. By default, out_file flushes each chunk to different path.(default: false)
 	Append bool `json:"append,omitempty"`
-	// +kubebuilder:validation:Optionalf
+	// +kubebuilder:validation:Optional
 	// Add path suffix(default: true)
 	AddPathSuffix *bool `json:"add_path_suffix,omitempty" plugin:"default:true"`
 	// The suffix of output result.(default: ".log")
